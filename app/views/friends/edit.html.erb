@@ -8,3 +8,6 @@
   <%= link_to "Show this friend", @friend %> |
   <%= link_to "Back to friends", friends_path %>
 </div>
+<div>
+	<td><%= button_to 'Destroy', @friend, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger" %></td>
+</div>
